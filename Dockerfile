@@ -22,4 +22,4 @@ HEALTHCHECK CMD exit 0
 WORKDIR /usr/local/bin
 
 ENTRYPOINT [ "/usr/bin/dumb-init", "docker-bench-security.sh" ]
-CMD [""]
+CMD ["sudo sh docker-bench-security.sh -l /tmp/docker-bench-security.sh.log -i -c check_4_1,check_4_2,check_4_3,check_4_4,check_4_7,check_4_8,check_4_9,check_4_10,check_4_11"]
